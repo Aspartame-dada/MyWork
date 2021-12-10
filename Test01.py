@@ -10,8 +10,10 @@ def get_show_save_image(img):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     cv2.imwrite("get_show_save_image.jpg",img)
-
+def add_img(img,img2):
+    result = cv2.add(img,img2)
+    cv2.imshow("加法",result)
 
 
 if __name__ == '__main__':
-    get_show_save_image(img)
+    add_img(img,img2)
